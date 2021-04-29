@@ -15,5 +15,10 @@ fields:
   config:
     min: 3
     max: 3
+- name: team
+  type: include
+  config: {}
+  template: team-member
+  label: Team
 pages:
 - content/Sections/team-section.md
