@@ -44,3 +44,5 @@ fields:
     min: 
     max: 
   label: Skills
+pages:
+- content/Team Members/francesco_colasante.md
