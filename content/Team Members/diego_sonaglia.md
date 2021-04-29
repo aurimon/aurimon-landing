@@ -1,5 +1,4 @@
 +++
-draft = true
 name = "Diego Sonaglia"
 profile_photo = ""
 role = ""
