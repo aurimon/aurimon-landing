@@ -1,6 +1,6 @@
 +++
-color_background = "#F8E71C"
-color_text = "#4A4A4A"
+color_background = "#0B0B0B"
+color_text = "#DADADA"
 heading = "Our Team"
 title = "Team Section"
 [[team_members]]
