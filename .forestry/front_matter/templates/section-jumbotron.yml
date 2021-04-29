@@ -32,6 +32,3 @@ fields:
   config:
     required: false
     color_format: Hex
-pages:
-- content/Sections/jumbotron-section.md
-- content/Sections/jumbotron-section.md

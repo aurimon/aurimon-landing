@@ -44,6 +44,3 @@ fields:
     max: 3
     labelField: team_member
   label: Team Members
-pages:
-- content/Sections/team-section.md
-- content/Sections/team-section.md
