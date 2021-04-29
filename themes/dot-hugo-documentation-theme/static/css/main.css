@@ -12,8 +12,7 @@
 
 .jumbotron {
   color: white;
-  background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.0)),
-  url("https://www.moog.com/content/dam/sites/moog/images/About_Moog_Inc/Industrial_Group/Industrial-Machinery.jpg");
+
   
   background-position: center;
   background-repeat: no-repeat;

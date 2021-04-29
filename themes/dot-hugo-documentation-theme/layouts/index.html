@@ -18,108 +18,100 @@
     
 
 
-
+{{ with .Site.GetPage "/logo" }}
 <!-- Navbar -->
 <nav class="navbar navbar-light bg-warning">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/icons/logo.webp" alt="" width="24" height="24" class="d-inline-block align-text-top">
-      {{.Title}}
-      {{ range .Site.Sections }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
+      <img src="{{.Params.icon_text}}" alt="" height="30" class="d-inline-block align-text-top">
     </a>
   </div>
 </nav>
 
+{{ end }}
 
 
-
+{{ with .Site.GetPage "/Landing/jumbotron-section" }}
 
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid text-center text-dark">
+<div class="jumbotron jumbotron-fluid text-center" style="background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.0)), url({{.Params.Image}});">
 
     
-    <div class="align-middle">
+    <div class="align-middle" style="color:{{.Params.Color_Text}} !important ;">
       <div class="row align-items-center">
         <div class="col">
-          <img class="d-block mx-auto mb-4" src="/icons/logo.webp" alt="" width="100" heigh="100">
-          <h1 class="display-1 fw-bold">Aurimon</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="lead mb-3">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <img class="d-block mx-auto mb-4" src="{{ with .Site.GetPage "/logo" }}{{.Params.Icon}}{{end}}" alt=""  height="200">
+          <h1 class="display-5 fw-bold">{{ .Params.Description }}</h1>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Section: Product -->
+{{ end }}
 
-<section class="product-section bg-secondary text-light">
+<!-- Section: Product -->
+{{ with .Site.GetPage "/Landing/product-section" }}
+<section class="product-section bg-secondary text-light  " style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.Color_Background}} !important">
   <div class="text-center">
-    <h1 class="display-5 ">The Product</h1>
+    <h1 class="display-5 ">{{ .Params.Heading }}</h1>
+  
+
+    <p class="lead mb-3">{{ .Params.Description }}</p>
+
   </div>
-  <div>
+
+  
+
     <div class="row  justify-content-md-center">
+      {{ range .Params.Product_Infos}}
+
       <div class="col-md-5">
         <div class="card card-info  text-center">
             <div class="card-body">
-            <img class="d-block mx-auto mb-4" src="/icons/logo.webp" alt="" width="50" heigh="50">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <img class="d-block mx-auto mb-4" src="{{ .icon }}" alt="" width="50" heigh="50">
+              <h3 class="card-title">{{.name}}</h5>
+              <p class="card-text">{{.desc}}</p>
           </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div class="card card-info  text-center">
-            <div class="card-body">
-            <img class="d-block mx-auto mb-4" src="/icons/logo.webp" alt="" width="50" heigh="50">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-md-center">
-      <div class="col-md-5">
-              <div class="card card-info  text-center">
-            <div class="card-body">
-            <img class="d-block mx-auto mb-4" src="/icons/logo.webp" alt="" width="50" heigh="50">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-              <div class="card card-info  text-center">
-            <div class="card-body">
-            <img class="d-block mx-auto mb-4" src="/icons/logo.webp" alt="" width="50" heigh="50">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      {{ end}}
+      
   </div>
 
 </section>
+{{ end }}
 
+
+
+
+{{ with .Site.GetPage "Landing/team-section" }}
 <!-- Section: Team-->
-<section class="team-section text-center bg-warning">
+<section class="team-section text-center bg-warning" style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.color_background}}; !important">
   <h1 class="display-5">Our team</h1>
   <!-- Grid row -->
   <div class="row justify-content-md-center">
+    {{ range .Params.Team_Members}}
+  <br>
+    {{ with $.Site.GetPage .team_member}}
 
-    <!-- Grid column -->
     <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
       <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle z-depth-1"
+        <img src="{{ .Params.profile_photo }}" class="rounded-circle z-depth-1" width="150" height="150"
           alt="Sample avatar">
       </div>
-      <h5 class="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-      <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p>
-      <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-        adipisci sed quia non numquam modi tempora eius.</p>
+      <h5 class="font-weight-bold mt-4 mb-3">{{.Params.name}}</h5>
+      <p class="text-uppercase blue-text"><strong>{{.Params.Role}}</strong></p>
+
+      
+        {{ range .Params.skills}}
+        
+          <p >{{.}}</p>
+  
+  
+        {{ end }}
+
+
       <ul class="list-unstyled mb-0">
         <!-- Facebook -->
         <a class="p-2 fa-lg fb-ic">
@@ -136,62 +128,14 @@
       </ul>
     </div>
     <!-- Grid column -->
+    {{ end }}
+    {{ end }}
+   
 
-    <!-- Grid column -->
-    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-      <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
-          alt="Sample avatar">
-      </div>
-      <h5 class="font-weight-bold mt-4 mb-3">John Doe</h5>
-      <p class="text-uppercase blue-text"><strong>Web developer</strong></p>
-      <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
-        doloremque rem laudantium totam aperiam.</p>
-      <ul class="list-unstyled mb-0">
-        <!-- Facebook -->
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-        <!-- Instagram -->
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-instagram blue-text"> </i>
-        </a>
-      </ul>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
-      <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1"
-          alt="Sample avatar">
-      </div>
-      <h5 class="font-weight-bold mt-4 mb-3">Maria Smith</h5>
-      <p class="text-uppercase blue-text"><strong>Photographer</strong></p>
-      <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim est fugiat nulla id eu laborum.</p>
-      <ul class="list-unstyled mb-0">
-        <!-- Facebook -->
-        <a class="p-2 fa-lg fb-ic">
-          <i class="fab fa-facebook-f blue-text"> </i>
-        </a>
-        <!-- Instagram -->
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-instagram blue-text"> </i>
-        </a>
-        <!-- Dribbble -->
-        <a class="p-2 fa-lg ins-ic">
-          <i class="fab fa-dribbble blue-text"> </i>
-        </a>
-      </ul>
-    </div>
-    <!-- Grid column -->
-  </div>
-  <!-- Grid row -->
 </section>
 
 
-
+{{ end }}
 
 
 <!-- Section: Call to Action -->
