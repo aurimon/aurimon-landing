@@ -24,6 +24,14 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: team_members
+  type: blocks
+  label: Team Members
+  template_types:
+  - team-member
+  config:
+    min: 3
+    max: 
 pages:
 - content/Sections/team-section.md
 - content/Sections/team-section.md
