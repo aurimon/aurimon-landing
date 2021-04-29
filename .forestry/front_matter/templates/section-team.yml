@@ -7,20 +7,22 @@ fields:
   config:
     required: false
   label: Title
-- name: team_members
-  type: blocks
-  label: Team Members
-  template_types:
-  - team-member
+- name: heading
+  type: text
   config:
-    min: 3
-    max: 3
-- name: team
-  type: field_group_list
+    required: false
+  label: Heading
+- name: color-background
+  type: color
+  label: color-background
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Team Members
+    required: false
+    color_format: Hex
+- name: color-text
+  type: color
+  label: color-text
+  config:
+    required: false
+    color_format: Hex
 pages:
 - content/Sections/team-section.md
