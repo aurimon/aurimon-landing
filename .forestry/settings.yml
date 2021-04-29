@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: content/Sections/team-section.md
+  label: Team Section
+  match: "**/*"
 - type: directory
   path: content
   label: Pages
