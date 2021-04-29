@@ -5,8 +5,8 @@ description = "asfsafasfasf"
 heading = "Product "
 title = "Product Section"
 [[product_infos]]
-description = ""
-icon = ""
+description = "fasfasasf"
+icon = "/uploads/2018/06/21/forestry-symbol.svg"
 name = "Reduce Time"
 template = "product-info"
 [[product_infos]]
