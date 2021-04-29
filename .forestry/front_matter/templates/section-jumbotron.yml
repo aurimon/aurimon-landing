@@ -32,5 +32,3 @@ fields:
   config:
     required: false
     color_format: Hex
-pages:
-- content/Sections/aurimon.md
