@@ -14,7 +14,7 @@ linkedin = ""
 mail = ""
 website = ""
 [[team_members]]
-name = ""
+name = "Andrea Littera"
 profile_photo = ""
 role = ""
 skills = []
@@ -24,7 +24,7 @@ linkedin = ""
 mail = ""
 website = ""
 [[team_members]]
-name = ""
+name = "Diego Sonaglia"
 profile_photo = ""
 role = ""
 skills = []
