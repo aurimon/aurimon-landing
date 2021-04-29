@@ -1,6 +1,6 @@
 +++
 color_background = "#4A4A4A"
-color_text = "#E20606"
+color_text = "#E5DDDD"
 description = "asfsafasfasf"
 heading = "Product "
 title = "Product Section"
