@@ -1,7 +1,7 @@
 +++
 description = ""
 draft = true
-title = ""
+title = "Product Section"
 [[product_infos]]
 description = ""
 icon = ""
