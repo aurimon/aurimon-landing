@@ -1,7 +1,49 @@
 +++
 draft = true
 motto = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-sections = []
 title = "AuriMon"
+[[sections]]
+description = ""
+image = ""
+template = "section-jumbotron"
+title = ""
+[[sections]]
+description = ""
+product_infos = []
+template = "section-product"
+title = ""
+[[sections]]
+template = "section-team"
+title = "Our Team"
+[[sections.team_members]]
+name = ""
+profile_photo = ""
+role = ""
+skills = []
+template = "team-member"
+[sections.team_members.social]
+linkedin = ""
+mail = ""
+website = ""
+[[sections.team_members]]
+name = ""
+profile_photo = ""
+role = ""
+skills = []
+template = "team-member"
+[sections.team_members.social]
+linkedin = ""
+mail = ""
+website = ""
+[[sections.team_members]]
+name = ""
+profile_photo = ""
+role = ""
+skills = []
+template = "team-member"
+[sections.team_members.social]
+linkedin = ""
+mail = ""
+website = ""
 
 +++
