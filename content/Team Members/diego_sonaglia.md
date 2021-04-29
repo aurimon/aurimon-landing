@@ -1,8 +1,8 @@
 +++
 name = "Diego Sonaglia"
-profile_photo = "/uploads/2018/06/21/drone-photo.jpeg"
+profile_photo = "/uploads/photo5789430445891499277.jpg"
 role = "The Hands"
-skills = ["Part Time Machine Learning Solution Designer @ Tiuke SRL", "Cloud and and DevOps ", "End to end Machine Learning development", "Imagery and  time-series ML"]
+skills = ["End to end Machine Learning development", "Freelance Machine Learning Solution Designer ", "Cloud and and DevOps tinkerer"]
 [social]
 linkedin = ""
 mail = ""
