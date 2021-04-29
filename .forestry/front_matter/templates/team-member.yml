@@ -45,4 +45,5 @@ fields:
     max: 
   label: Skills
 pages:
+- content/Team Members/andrea_littera.md
 - content/Team Members/francesco_colasante.md
