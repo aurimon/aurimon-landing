@@ -19,7 +19,7 @@ name = "Andrea Littera"
 profile_photo = ""
 role = ""
 skills = []
-team_member = ""
+team_member = "Team Members/diego_sonaglia.md"
 template = "team-member"
 [team_members.social]
 linkedin = ""
