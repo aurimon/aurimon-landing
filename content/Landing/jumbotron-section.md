@@ -2,7 +2,7 @@
 color_text = ""
 description = "Lorem Ipsum"
 heading = "Aurimon"
-image = ""
+image = "/uploads/industrial-machinery.jpg"
 title = "Jumbotron Section"
 
 +++
