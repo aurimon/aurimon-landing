@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "Team Section"
 [[team_members]]
 name = ""
