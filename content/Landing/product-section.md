@@ -1,7 +1,7 @@
 +++
 color_background = "#F5A623"
 color_text = "#0B0B0B"
-description = "asfsafasfasf"
+description = "Aurimon offers an solution to monitor every kind of machinery by listening at the sound it produces and elaborating it through an innovative AI algorithm, allowing to detect faults early and reliably"
 heading = "Product "
 title = "Product Section"
 [[product_infos]]
