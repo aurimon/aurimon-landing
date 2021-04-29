@@ -1,7 +1,9 @@
 +++
+color_text = ""
 description = ""
 draft = true
+heading = ""
 image = ""
-title = "Aurimon"
+title = "Jumbotron Section"
 
 +++
