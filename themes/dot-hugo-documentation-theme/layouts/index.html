@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.82.0">
-    <title>Heroes · Bootstrap v5.0</title>
+    <title>{{.Site.Title}}</title>
     <!-- Bootstrap core CSS -->
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,8 +15,6 @@
   </head>
 
 <body>
-    
-
 
 {{ with .Site.GetPage "/logo" }}
 <!-- Navbar -->
@@ -41,7 +39,8 @@
       <div class="row align-items-center">
         <div class="col">
           <img class="d-block mx-auto mb-4" src="{{ with .Site.GetPage "/logo" }}{{.Params.Icon}}{{end}}" alt=""  height="200">
-          <h1 class="display-5 fw-bold">{{ .Params.Description }}</h1>
+          <h1 class="display-5 fw-bold">{{ .Params.Heading }}</h1>
+          <p class="fw-bold">{{ .Params.Description }}</p>
         </div>
       </div>
     </div>
