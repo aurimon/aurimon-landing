@@ -35,12 +35,12 @@
 <div class="jumbotron jumbotron-fluid text-center" style="background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.0)), url({{.Params.Image}});">
 
     
-    <div class="align-middle" style="color:{{.Params.Color_Text}} !important ;">
-      <div class="row align-items-center">
-        <div class="col">
+    <div class="align-middle" style="color:{{.Params.Color_Text}} !important; margin-top: 4rem">
+      <div class="row justify-content-center">
+        <div class="col-md-6" >
           <img class="d-block mx-auto mb-4" src="{{ with .Site.GetPage "/logo" }}{{.Params.Icon}}{{end}}" alt=""  height="200">
-          <h1 class="display-5 fw-bold">{{ .Params.Heading }}</h1>
-          <p class="fw-bold">{{ .Params.Description }}</p>
+          <h1 class="display-5 fw-bold" style=" margin-top: 4rem">{{ .Params.Heading }}</h1>
+          <p class="fw-bold" style=" margin-top: 4rem">{{ .Params.Description }}</p>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
 
 <!-- Section: Product -->
 {{ with .Site.GetPage "/Landing/product-section" }}
-<section class="product-section bg-secondary text-light  " style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.Color_Background}} !important">
+<section class="product-section " style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.Color_Background}} !important">
   <div class="text-center">
     <h1 class="display-5 ">{{ .Params.Heading }}</h1>
   
@@ -65,12 +65,12 @@
     <div class="row  justify-content-md-center">
       {{ range .Params.Product_Infos}}
 
-      <div class="col-md-5">
-        <div class="card card-info  text-center">
+      <div class="col-md-5 col-info">
+        <div class="card card-info h-100 text-center">
             <div class="card-body">
-            <img class="d-block mx-auto mb-4" src="{{ .icon }}" alt="" width="50" heigh="50">
+            <img class="mx-auto " src="{{ .icon }}" alt="" height="50">
               <h3 class="card-title">{{.name}}</h5>
-              <p class="card-text">{{.desc}}</p>
+              <p class="card-text">{{.description}}</p>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
 
 {{ with .Site.GetPage "Landing/team-section" }}
 <!-- Section: Team-->
-<section class="team-section text-center bg-warning" style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.color_background}}; !important">
+<section class="team-section text-center" style="color:{{.Params.Color_Text}} !important ; background-color:{{.Params.color_background}}; !important">
   <h1 class="display-5">Our team</h1>
   <!-- Grid row -->
   <div class="row justify-content-md-center">
@@ -99,17 +99,19 @@
         <img src="{{ .Params.profile_photo }}" class="rounded-circle z-depth-1" width="150" height="150"
           alt="Sample avatar">
       </div>
-      <h5 class="font-weight-bold mt-4 mb-3">{{.Params.name}}</h5>
-      <p class="text-uppercase blue-text"><strong>{{.Params.Role}}</strong></p>
+      <h4 class="font-weight-bold mt-4 mb-3">{{.Params.name}}</h5>
+      <p class="text-uppercase"><strong>{{.Params.Role}}</strong></p>
+
+      <ul>
 
       
         {{ range .Params.skills}}
-        
-          <p >{{.}}</p>
+
+          <li >{{.}}</li>
   
   
         {{ end }}
-
+      </ul>
 
       <ul class="list-unstyled mb-0">
         <!-- Facebook -->

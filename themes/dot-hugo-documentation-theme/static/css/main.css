@@ -30,6 +30,11 @@
 .card-info {
   margin: 0.5rem;
   background-color: rgba(70, 70, 70, 0.0);
+
+}
+
+div.col-info{
+  margin: 1rem;
 }
 .product-section {
   padding-top: 2rem;
