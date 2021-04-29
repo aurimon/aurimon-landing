@@ -15,3 +15,5 @@ fields:
   config:
     min: 3
     max: 3
+pages:
+- content/Sections/team-section.md
