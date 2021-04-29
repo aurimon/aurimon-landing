@@ -6,6 +6,15 @@ webhook_url:
 sections:
 - type: heading
   label: Global
+- type: heading
+  label: Team Section
+- type: directory
+  path: content/Team Members
+  label: Members Pages
+  create: all
+  match: "*"
+  templates:
+  - team-member
 - type: directory
   path: content
   label: Pages
@@ -22,15 +31,6 @@ sections:
 - type: document
   path: content/Sections/team-section.md
   label: Team Section
-- type: heading
-  label: Team Section
-- type: directory
-  path: content/Team Members
-  label: Members
-  create: all
-  match: "*"
-  templates:
-  - team-member
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
