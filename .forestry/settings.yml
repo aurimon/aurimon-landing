@@ -4,10 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/Team Members/diego_sonaglia.md
-  label: Diego
+- type: heading
+  label: Landing Page
+- type: directory
+  path: ''
+  label: Team Members
+  create: documents
   match: "**/*"
+  templates:
+  - team-member
 - type: document
   path: README-FORESTRY.md
   label: Help
@@ -17,10 +22,6 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: heading
-  label: Page - Landing
-- type: heading
-  label: Team Members
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
