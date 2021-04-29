@@ -25,13 +25,25 @@ fields:
     required: false
     color_format: Hex
 - name: team_members
-  type: blocks
-  label: Team Members
-  template_types:
-  - team-member
+  type: field_group_list
+  fields:
+  - name: team_member
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Team Member
   config:
-    min: 3
+    min: 
     max: 
+    labelField: 
+  label: Team Members
 pages:
 - content/Sections/team-section.md
 - content/Sections/team-section.md
