@@ -9,6 +9,13 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: directory
+  path: content/Team Members
+  label: Team Members
+  create: all
+  match: "*"
+  templates:
+  - team-member
 - type: document
   path: README-FORESTRY.md
   label: Help
