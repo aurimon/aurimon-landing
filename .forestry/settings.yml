@@ -7,21 +7,19 @@ sections:
 - type: heading
   label: Landing Page
 - type: directory
-  path: ''
-  label: Team Members
-  create: documents
-  match: "**/*"
-  templates:
-  - team-member
-- type: document
-  path: README-FORESTRY.md
-  label: Help
-  read_only: true
-- type: directory
   path: content
   label: Pages
   create: all
   match: "*"
+- type: directory
+  path: content
+  label: Help
+  create: none
+  match: "*"
+- type: document
+  path: README-FORESTRY.md
+  label: Help
+  read_only: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
