@@ -15,7 +15,10 @@ fields:
 - name: sections
   type: blocks
   label: Sections
-  template_types: []
+  template_types:
+  - section-jumbotron
+  - section-product
+  - section-team
   config:
     min: 
     max: 
