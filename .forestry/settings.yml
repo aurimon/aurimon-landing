@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/Sections/team-section.md
-  label: Team
 - type: directory
   path: content
   label: Pages
@@ -19,14 +16,11 @@ sections:
 - type: heading
   label: Landing Page
 - type: document
-  path: content/Sections/product-section.md
-  label: Product Section
-- type: document
   path: content/Sections/jumbotron-section.md
   label: Jumbotron Section
 - type: document
-  path: content/Sections/team-section.md
-  label: Team Section
+  path: content/Sections/product-section.md
+  label: Product Section
 - type: directory
   path: content/Team Members
   label: Team Members
