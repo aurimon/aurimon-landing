@@ -1,4 +1,21 @@
 ---
 label: Landing Page
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: motto
+  type: text
+  config:
+    required: false
+  label: Motto
+- name: sections
+  type: blocks
+  label: Sections
+  template_types: []
+  config:
+    min: 
+    max: 
