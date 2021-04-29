@@ -1,5 +1,4 @@
 +++
-draft = true
 name = "Andrea Littera"
 profile_photo = ""
 role = ""
