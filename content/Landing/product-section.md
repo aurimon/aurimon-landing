@@ -5,9 +5,9 @@ description = "asfsafasfasf"
 heading = "Product "
 title = "Product Section"
 [[product_infos]]
-description = "fasfasasf"
-icon = "/uploads/2018/06/21/forestry-symbol.svg"
-name = "Reduce Time"
+description = "Predictive maintenance allows you to keep your machine running as much as possible, reducing both planned and unplanned downtime."
+icon = "/uploads/kisspng-computer-icons-speed-test-icon-design-5ae641e2ec1195-1339032315250395869669.png"
+name = "Reduce Mantainance Time"
 template = "product-info"
 [[product_infos]]
 description = ""
