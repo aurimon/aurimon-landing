@@ -10,9 +10,9 @@ icon = "/uploads/kisspng-computer-icons-speed-test-icon-design-5ae641e2ec1195-13
 name = "Reduce Mantainance Time"
 template = "product-info"
 [[product_infos]]
-description = ""
+description = "Sound patterns allow you to identify the health of various system components better than simply monitoring the time it has been used, unleashing new efficiency possibilities."
 icon = ""
-name = ""
+name = "Till the end"
 template = "product-info"
 
 +++
