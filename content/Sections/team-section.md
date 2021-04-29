@@ -30,7 +30,7 @@ name = "Diego Sonaglia"
 profile_photo = ""
 role = ""
 skills = []
-team_member = ""
+team_member = "Team Members/francesco_colasante.md"
 template = "team-member"
 [team_members.social]
 linkedin = ""
