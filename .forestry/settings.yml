@@ -23,13 +23,13 @@ sections:
 - type: heading
   label: Landing Page
 - type: document
-  path: content/Sections/jumbotron-section.md
+  path: content/Landing/jumbotron-section.md
   label: Jumbotron Section
 - type: document
-  path: content/Sections/product-section.md
+  path: content/Landing/product-section.md
   label: Product Section
 - type: document
-  path: content/Sections/team-section.md
+  path: content/Landing/team-section.md
   label: Team Section
 upload_dir: static/uploads
 public_path: "/uploads"
