@@ -45,4 +45,5 @@ fields:
     max: 
   label: Skills
 pages:
+- content/diego_sonaglia.md
 - content/francesco_colasante.md
