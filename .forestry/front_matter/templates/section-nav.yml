@@ -1,4 +1,10 @@
 ---
 label: Section - Nav
 hide_body: true
-fields: []
+fields:
+- name: color_background
+  type: color
+  label: color background
+  config:
+    required: false
+    color_format: Hex
