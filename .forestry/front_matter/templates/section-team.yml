@@ -44,3 +44,5 @@ fields:
     max: 3
     labelField: team_member
   label: Team Members
+pages:
+- content/Landing/team-section.md
