@@ -14,5 +14,10 @@ description = "Sound patterns allow you to identify the health of  system compon
 icon = "/uploads/908128-200.png"
 name = "Till the end"
 template = "product-info"
+[[product_infos]]
+description = "AI can recognize when something is going wrong better and faster than humans, allowing to prevent faults that would have stopped your production line otherwise"
+icon = "/uploads/stop-icon-25.png"
+name = "Don't Wait, Predict!"
+template = "product-info"
 
 +++
