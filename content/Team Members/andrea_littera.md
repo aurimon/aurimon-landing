@@ -1,8 +1,8 @@
 +++
 name = "Andrea Littera"
 profile_photo = ""
-role = ""
-skills = []
+role = "dgthgtesrhsthre"
+skills = ["", "rthrthrthsrtsh"]
 [social]
 linkedin = ""
 mail = ""
