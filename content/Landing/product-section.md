@@ -11,7 +11,7 @@ name = "Reduce Mantainance Time"
 template = "product-info"
 [[product_infos]]
 description = "Sound patterns allow you to identify the health of various system components better than simply monitoring the time it has been used, unleashing new efficiency possibilities."
-icon = ""
+icon = "/uploads/908128-200.png"
 name = "Till the end"
 template = "product-info"
 
