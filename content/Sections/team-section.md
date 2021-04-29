@@ -8,6 +8,7 @@ name = "Francesco Colasante"
 profile_photo = ""
 role = ""
 skills = []
+team_member = "Team Members/andrea_littera.md"
 template = "team-member"
 [team_members.social]
 linkedin = ""
@@ -18,6 +19,7 @@ name = "Andrea Littera"
 profile_photo = ""
 role = ""
 skills = []
+team_member = ""
 template = "team-member"
 [team_members.social]
 linkedin = ""
@@ -28,6 +30,7 @@ name = "Diego Sonaglia"
 profile_photo = ""
 role = ""
 skills = []
+team_member = ""
 template = "team-member"
 [team_members.social]
 linkedin = ""
