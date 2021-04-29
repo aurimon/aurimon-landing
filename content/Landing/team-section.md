@@ -1,6 +1,8 @@
 +++
 color-background = "#F8E71C"
 color-text = "#4A4A4A"
+color_background = "#F5A623"
+color_text = "#0B0B0B"
 heading = "Our Team"
 title = "Team Section"
 [[team_members]]

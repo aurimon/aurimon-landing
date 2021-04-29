@@ -1,5 +1,5 @@
 +++
-color_text = "#4A4A4A"
+color_text = "#0B0B0B"
 description = "Lorem Ipsum"
 heading = "Aurimon"
 image = "/uploads/industrial-machinery.jpg"
