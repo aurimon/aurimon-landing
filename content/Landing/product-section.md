@@ -1,5 +1,5 @@
 +++
-color_background = "#0B0B0B"
+color_background = "#F5A623"
 color_text = "#CDCDCD"
 description = "asfsafasfasf"
 heading = "Product "
