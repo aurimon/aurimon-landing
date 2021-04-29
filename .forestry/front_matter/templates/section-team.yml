@@ -34,14 +34,14 @@ fields:
       required: false
       options: []
       source:
-        type: simple
-        section: 
+        type: pages
+        section: team-members
         file: 
         path: 
     label: Team Member
   config:
-    min: 
-    max: 
+    min: 3
+    max: 3
     labelField: 
   label: Team Members
 pages:
