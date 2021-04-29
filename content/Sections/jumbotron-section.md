@@ -1,7 +1,7 @@
 +++
 color_text = ""
-description = ""
-heading = ""
+description = "Lorem Ipsum"
+heading = "Aurimon"
 image = ""
 title = "Jumbotron Section"
 
