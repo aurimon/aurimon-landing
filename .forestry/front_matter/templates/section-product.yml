@@ -1,4 +1,26 @@
 ---
 label: Section - Product
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: product_infos
+  type: blocks
+  label: Product Infos
+  template_types:
+  - product-info
+  config:
+    min: 
+    max: 
