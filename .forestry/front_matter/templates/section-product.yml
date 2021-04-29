@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
 - name: description
   type: textarea
   default: ''
@@ -24,6 +29,18 @@ fields:
   config:
     min: 
     max: 
+- name: color_background
+  type: color
+  label: Color Background
+  config:
+    required: false
+    color_format: Hex
+- name: color_text
+  type: color
+  label: Color Text
+  config:
+    required: false
+    color_format: Hex
 pages:
 - content/Sections/product-section.md
 - content/Sections/product-section.md
