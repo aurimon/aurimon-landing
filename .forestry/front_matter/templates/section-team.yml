@@ -12,13 +12,13 @@ fields:
   config:
     required: false
   label: Heading
-- name: color-background
+- name: color_background
   type: color
   label: color-background
   config:
     required: false
     color_format: Hex
-- name: color-text
+- name: color_text
   type: color
   label: color-text
   config:
