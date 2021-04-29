@@ -16,11 +16,11 @@ fields:
     min: 3
     max: 3
 - name: team
-  type: list
+  type: field_group_list
   config:
-    use_select: false
     min: 
     max: 
-  label: team
+    labelField: 
+  label: Team Members
 pages:
 - content/Sections/team-section.md
