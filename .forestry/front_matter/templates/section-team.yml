@@ -16,9 +16,11 @@ fields:
     min: 3
     max: 3
 - name: team
-  type: include
-  config: {}
-  template: team-member
-  label: Team
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: team
 pages:
 - content/Sections/team-section.md
