@@ -1,8 +1,8 @@
 +++
 name = "Francesco Colasante"
 profile_photo = ""
-role = ""
-skills = []
+role = "CTO"
+skills = ["asfasfasfs", "fasfasfasfasf"]
 [social]
 linkedin = ""
 mail = ""
