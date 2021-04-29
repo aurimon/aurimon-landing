@@ -4,7 +4,7 @@ color-text = "#4A4A4A"
 heading = "Our Team"
 title = "Team Section"
 [[team_members]]
-name = ""
+name = "Francesco Colasante"
 profile_photo = ""
 role = ""
 skills = []
