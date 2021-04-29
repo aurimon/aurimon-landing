@@ -1,4 +1,17 @@
 ---
 label: Section - Team
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: team_members
+  type: blocks
+  label: Team Members
+  template_types:
+  - team-member
+  config:
+    min: 3
+    max: 3
