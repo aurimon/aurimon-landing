@@ -12,8 +12,24 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: document
+  path: README-FORESTRY.md
+  label: Help
+  read_only: true
 - type: heading
   label: Landing Page
+- type: document
+  path: content/Sections/product-section.md
+  label: Product Section
+  match: "**/*"
+- type: document
+  path: content/Sections/jumbotron-seciton.md
+  label: Jumbotron Section
+  match: "**/*"
+- type: document
+  path: content/Sections/team-section.md
+  label: Team Section
+  match: "**/*"
 - type: directory
   path: content/Team Members
   label: Team Members
@@ -21,10 +37,6 @@ sections:
   match: "*"
   templates:
   - team-member
-- type: document
-  path: README-FORESTRY.md
-  label: Help
-  read_only: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
